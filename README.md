@@ -4,14 +4,14 @@ This repo contains utility scripts that help writing containerized apps. It also
 
 # Scripts
 
-- [load-env-vars.sh](load-env-vars.sh): Processes the below required environment variables to set up git and Slack operations. Load this file (via [source](https://linuxize.com/post/bash-source-command/)) and then load [slack.sh](slack.sh).
-- [slack.sh](slack.sh): Defines two Slack communication functions:
+- [load-env-vars.sh](scripts/load-env-vars.sh): Processes the below required environment variables to set up git and Slack operations. Load this file (via [source](https://linuxize.com/post/bash-source-command/)) and then load [slack.sh](scripts/slack.sh).
+- [slack.sh](scripts/slack.sh): Defines two Slack communication functions:
     - `slack_message()`: Post a message to the passed Slack channel.
     - `slack_upload()`: Upload a file to the passed Slack channel.
 
 # Environment variables
 
-[load-env-vars.sh](load-env-vars.sh) requires the following environment variables.
+[load-env-vars.sh](scripts/load-env-vars.sh) requires the following environment variables.
 
 > Note It's easiest and safest to save these in a `*.env` file and then pass that file to `docker run` as done below in "Steps to run the image locally".
 
@@ -22,4 +22,4 @@ This repo contains utility scripts that help writing containerized apps. It also
 
 # Documentation
 
-- [ecs.md](ecs.md): Documents the lab's [ECS](https://aws.amazon.com/ecs/) setup.
+- [ecs.md](docs/ecs.md): Documents the lab's [ECS](https://aws.amazon.com/ecs/) setup.
