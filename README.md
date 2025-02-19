@@ -23,3 +23,8 @@ This repo contains utility scripts that help writing containerized apps.
 ## Supporting a `DRY_RUN` environment variable
 
 Most lab scripts support a `DRY_RUN` environment variable that's used during development. Typically, the scripts check for that variable being set and, if so, exit before performing any permanent changes such as git operations. This allows running a script locally through the call to the actual model being containerized so that output(s) can be examined. 
+
+
+# required OS binaries
+
+Other than standard Linux commands and `bash`, the scripts here only require one additional binary: https://jqlang.org/ .
